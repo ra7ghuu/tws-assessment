@@ -1,0 +1,47 @@
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "id":1,
+    "firstname":"Ramu",
+    "lastname":"Raju",
+    "username":"ra7ghu",
+    "email":"ram@gmail.com",
+    "password":"rahul@123",
+    "profile_photo":"google.jpeg",
+    "address":"8th ward pulkurthi line 560102"
+}
+###
+GET http://localhost:3000/userData/2
+
+###
+POST http://localhost:3000/userRegister
+Content-Type: application/json
+
+{
+    "id":"2",
+    "firstname":"Raghu",
+    "lastname":"Raju",
+    "username":"r56ghu",
+    "email":"rau@gmail.com",
+    "password":"rahul@163",
+    "profile_photo":"google.jpeg",
+    "address":"8th ward pulkurthi line 570102"
+}
+
+###
+PUT http://localhost:3000/studentInfoUpdate/2
+Content-Type: application/json
+
+{
+    "firstname":"Reghu",
+    "lastname":"Raju",
+    "profile_photo":"google.jpeg",
+    "address":"8th ward pulkurthi line 570102"
+}
+
+###
+DELETE http://localhost:3000/studentDelete/2
+
+###
+GET http://localhost:3000/allUsers/
